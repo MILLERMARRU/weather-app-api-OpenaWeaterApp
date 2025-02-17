@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- import googgle icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!-- Importar Notyf desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header class="input-container">
+            <input type="text" placeholder="Busque su ciudad" class="city-input">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="country-txt">
+                        Ciudad, Pais
+                    </h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">
+                    Fecha, 07 feb
+                </h5>
+            </div>
+            <div class="weather-summary-container">
+                <img src="assets/weather/clouds.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">
+                        34 °C
+                    </h1>
+                    <h3 class="condition-txt regular-txt">
+                        Nublado
+                    </h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">
+                            Humedad
+                        </h5>
+                        <h5 class="humidity-value-txt">
+                            80%
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">
+                            Viento
+                        </h5>
+                        <h5 class="wind-value-txt">
+                            2 M/s
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+
+            <img src="assets/message/search-city.png" ">
+            <h1> Busca tu ciudad</h1>
+            <h4 class=" regular-txt">
+            Ingresa el nombre de tu ciudad para ver el clima
+            </h4>
+
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+
+            <img src="assets/message/404 error with a tired person-amico.svg">
+            <h1> Algo salio mal</h1>
+            <h4 class="regular-txt">
+                No pudimos encontrar la ciudad que buscas
+            </h4>
+
+        </section>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script  src="script.js"></script>
+    
+
+</body>
+
+</html>
