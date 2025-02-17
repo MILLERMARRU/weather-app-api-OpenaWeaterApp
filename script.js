@@ -17,7 +17,7 @@ const forecastItemsContainer = document.querySelector(
   ".forecast-items-container"
 );
 
-const apikey = 98188f4c856895e456de76097ee4df68;
+const apikey = CONFIG.API_KEY;
 
 const notyf = new Notyf({
   duration: 3000,
