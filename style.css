@@ -191,3 +191,31 @@ body::before{
     height: 180px;
     width: fit-content;
 }
+
+/* 📲 Tablets (481px - 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .weather-summary-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .condition-item span {
+        font-size: 26px;
+    }
+}
+
+/* 🖥️ Pantallas Grandes (Más de 1200px) */
+@media (min-width: 1200px) {
+    .main-container {
+        width: 350px;
+    }
+
+    .weather-summary-img {
+        width: 110px;
+        height: 110px;
+    }
+}
